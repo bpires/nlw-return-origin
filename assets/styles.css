@@ -1,0 +1,195 @@
+/* base model: https://www.figma.com/file/HhBnIxVOs2s79A61Wkf4a8/NLW8-%C2%B7-DoctorCare?node-id=0%3A1 */
+
+
+/* Reseting browser configs */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* setting 1rem == 10px */
+
+:root {
+  font-size: 62.5%
+}
+
+
+/* Declaring variables */
+
+:root {
+  /* fonts */
+  --font-title: 700 3.4rem/4.4rem 'DM Sans', sans-serif;
+  --font-subtitle: 400 1.8rem/2.7rem 'DM Sans', sans-serif;
+  --font-numbers-title: 700 4.8rem/6.2rem 'DM Sans', sans-serif;
+  --font-numbers-text: 400 1.6rem/2.4rem 'DM Sans', sans-serif;
+  --font-button: 700 1.4rem/1.8rem 'DM Sans', sans-serif;
+  --font-heat-text: 700 1.4rem/2.1rem 'DM Sans', sans-serif;
+  --font-services-title: 700 3rem/3.9rem 'DM Sans ', sans-serif;
+  --font-services-card-text: 400 1.6rem/2.4rem 'DM Sans', sans-serif;
+  --font-services-card-title: 700 2.4rem/3.1rem 'DM Sans', sans-serif;
+  --font-about-text: 400 1.6rem/2.4rem 'DM Sans', sans-serif;
+  --font-about-title: 700 3rem/3.9rem 'DM Sans ', sans-serif;
+  --font-contact-title: 700 3rem/3.9rem 'DM Sans ', sans-serif;
+  --font-contact-subtitle: 400 1.6rem/2.4rem 'DM Sans', sans-serif;
+  --font-footer-subtitle: 400 1.6rem/2.1rem 'DM Sans', sans-serif;
+ 
+  /* color palette */
+  /* primary colors */
+  --primary-brand-green: hsla(170, 100%, 26%);
+  --primary-brand-green-light: hsl(148, 23%, 89%);  
+  --primary-brand-green-light-02: hsl(180, 14%, 97%);  
+  --primary-brand-beige: hsl(39, 100%, 97%);
+  --primary-brand-green-hover:hsl(170, 100%, 14%);
+  /* secondary colors */
+  --secondary-gray-headline: hsl(210, 11%, 15%);
+  --secondary-gray-paragraph: hsl(210, 9%, 31%);  
+  --secondary-white: hsl(0, 0%, 100%);  
+}
+
+body {
+  text-align: center;
+}
+
+.heat-text {
+  font: var(--font-heat-text);
+  color: var(--primary-brand-green);
+}
+
+header .heat-text {
+  padding-top: 4.1rem;
+}
+
+header h1 {
+  font: var(--font-title);
+  color: var(--secondary-gray-headline);
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+header p {
+  font: var(--font-subtitle);
+  color: var(--secondary-gray-paragraph);
+  margin-bottom: 3.24rem;
+}
+
+header {
+  background: var(--primary-brand-green-light);
+  width: 37.5rem;
+  height: 108rem;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header img {
+  margin-top: 6rem;
+  margin-bottom: 25.15rem
+}
+
+header button {
+  background: var(--primary-brand-green);
+  border: none;
+  border-radius: 4rem;
+  margin-bottom: 6rem;
+  width: 26.3rem;
+  height: 5.2rem;
+  font: var(--font-button);
+  color: var(--secondary-white);
+  text-transform: uppercase;
+  
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: center;
+  margin: 0 auto 0;
+}
+
+
+
+.numbers {
+  background: var(--primary-brand-beige);
+  width: 32.7rem;
+  height: 47rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6rem;
+  margin: 0 auto 0;
+  border: 1px solid var(--primary-brand-green-light);
+  border-radius: 6px;
+}
+
+.numbers-text {
+  font: var(--font-numbers-text);
+  color: var(--primary-brand-green);
+}
+
+.numbers-title {
+  font: var(--font-numbers-title);
+  color: var(--secondary-gray-headline);
+}
+
+.services {
+  background: var(--primary-brand-green-light-02);
+  font: var(--font-services-title);
+  margin: auto;
+}
+
+.service-card h3 {
+  font: var(--font-services-card-title)
+}
+
+.service-card p {
+  font: var(--font-services-card-text)
+}
+
+.service-card {
+  background: var(--secondary-white);
+  width: 32.7rem;
+  height: 20.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.4rem;
+}
+
+.about {
+  background: var(--primary-brand-beige);
+}
+
+.about h1 {
+  font: var(--font-about-title);
+  color: var(--secondary-gray-headline)
+}
+
+.about p {
+  font: var(--font-about-text);
+  color: var(--secondary-gray-paragraph)
+}
+
+
+.contact {
+  background: var(--secondary-white);
+}
+
+.contact h2 {
+  color: var(--secondary-gray-headline);
+  font: var(--font-title);
+}
+
+.contact p {
+  font: var(--font-contact-subtitle)
+}
+
+footer {
+  background: var(--primary-brand-green);
+  color: var(--secondary-white);
+}
