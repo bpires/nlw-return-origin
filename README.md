@@ -53,7 +53,7 @@
 
 <h3 align="center">Week Highlights</h3>
 
-##### Day 1
+##### 🔭 Stage 1
 
 > Figma basics
 > 
@@ -65,7 +65,7 @@
 > 
 > Using relative length units
 
-##### Day 2
+##### 👨‍🚀 Stage 2
 
 > Responsive layouts
 > 
@@ -75,7 +75,7 @@
 > 
 > Code writing best practises
 
-##### Day 3
+##### 🚀 Stage 3
 
 >One page concept
 >
@@ -85,9 +85,9 @@
 >
 >Clean code strategies
 
-##### Day 4
+##### 🪐 Stage 4
 
-##### Day 5
+##### 🌌 Stage 5
 
 ---
 
