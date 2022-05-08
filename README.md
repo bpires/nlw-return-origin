@@ -1,5 +1,5 @@
-<img src="./assets/project-img/logoNLWreturn.png" />
 
+<p align="center"><img src="./assets/project-img/logoNLWreturn.png" /></p>
 
 <h3 align="center">
 	Project developed on the Origin path of NLW 8th edition
@@ -56,16 +56,23 @@
 ##### Day 1
 
 >Figma basics
+>
 >Exporting SVG into HTML
+>
 >Semantic HTML structuring
+>
 >Declaring variables in CSS
+>
 >Using relative length units
 
 ##### Day 2
 
 >Responsive layouts
+>
 >Declaring JavaScript functions
+>
 >Working with Document Object Model
+>
 >Code writing best practises
 
 ##### Day 3
@@ -97,7 +104,7 @@ Made with 💜 Powered by ☕<p>
 <div>
 
 --- 
-
-_Feel free to get inspired by any aspect of this project but be reasonable, do not just copy._
-_Like academic writing, your work can incorporate the ideas of others but should reflect your original approach to the problem._
-
+<p align="center"><i>
+I'm am an open source enthusiast. Feel free to get inspired by any aspect of this project! Even so, be reasonable: do not just copy.<br/>
+Like academic writing, your work can incorporate the ideas of others but should reflect your original approach to the problem.
+	<i></p>
