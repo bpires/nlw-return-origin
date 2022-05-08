@@ -4,6 +4,13 @@
 <h3 align="center">
 	Project developed on the Origin path of NLW 8th edition
 </h3>
+
+---
+
+<br>
+<h1 align="center">
+	NLW Return · Mission: Origin
+</h1>
 <p align="center">
 <img src="https://img.shields.io/badge/PRs-welcome-00856f.svg?style=flat-square"/>
 	<img src="https://img.shields.io/github/license/bpires/nlw-return-origin?color=00856f"/>
@@ -12,29 +19,26 @@
 <img src="https://img.shields.io/github/languages/count/bpires/nlw-return-origin?color=00856f"/>
 </p>
 
+<br>
 
----
-
-<h1 align="center">
-	NLW Return · Mission: Origin
-</h1>
-
+<br>
 <div><img align="right" src="./assets/project-img/origin-logo.svg">
 
-<span align="left">
-	The project proposal comprises a responsive and customizable landing page originally designed for DoctorCare, a fictional medical consultation platform.
-</span>
+<p align="left">
+	The project proposal comprises a responsive and customizable landing page originally designed <br>for DoctorCare, a fictional medical consultation platform.
+</p>
+<p align="left">Development was guided and conducted by<a href="https://maykbrito.dev/"> Mayk Brito</a>, educator @Rocketseat.</p>
+	<br>
+	<br>
 
 </div>
 
 
-
 <a href="https://www.figma.com/community/file/1102912263666619803"><img src="./assets/project-img/DoctorCareFigma.png"></a>
-
-
+	
 <p align="center">Original layout by <a href="https://jonasmilan.cc/">Jonas Milan</a>, UI designer @Rocketseat. Project available at <a href="https://www.figma.com/community/file/1102912263666619803">Figma</a>.</p>
-<p align="center">Development was guided and directed by <a href="https://maykbrito.dev/">Mayk Brito</a>, educator @Rocketseat.</p>
-
+	
+	
 ---
 
 
@@ -97,7 +101,7 @@
 ---
 
 <div>
-<img align="right" src="https://avatars.githubusercontent.com/bpires?size=75">
+<img align="left" src="https://avatars.githubusercontent.com/bpires?size=75">
 <p align="center">
 Made with 💜 Powered by ☕<p>
 <p align="center"><a href="https://www.linkedin.com/in/rafaelbpires" target="_blank"><img align="center" src="https://img.shields.io/badge/get%20in%20touch!-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" height="25"></a></p>
