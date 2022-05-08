@@ -75,7 +75,7 @@
 > 
 > Code writing best practises
 
-##### 🚀 Stage 3
+##### 🛰️ Stage 3
 
 >One page concept
 >
@@ -85,7 +85,7 @@
 >
 >Clean code strategies
 
-##### 🪐 Stage 4
+##### 🚀 Stage 4
 
 ##### 🌌 Stage 5
 
