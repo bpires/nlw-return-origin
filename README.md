@@ -109,6 +109,7 @@ Made with 💜 Powered by ☕<p>
 
 --- 
 <p align="center"><i>
-I'm am an open source enthusiast. Feel free to get inspired by any aspect of this project! Even so, be reasonable: do not just copy.<br/>
-Like academic writing, your work can incorporate the ideas of others but should reflect your original approach to the problem.
+I'm am an open source enthusiast. Feel free to get inspired by any aspect of this project!<br/>Even so, be reasonable: do not just copy.<br/>
+Like academic writing, your work can incorporate the ideas of others,
+<br>but should reflect your original approach to the problem.
 	<i></p>
