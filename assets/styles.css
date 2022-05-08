@@ -1,7 +1,7 @@
 /*=== base model: https://www.figma.com/file/HhBnIxVOs2s79A61Wkf4a8/NLW8-%C2%B7-DoctorCare?node-id=0%3A1 ===*/
 
 
-/*=== Reseting general configs ===*/
+/*=== general configs ===*/
 
 * {
   margin: 0;
@@ -14,11 +14,21 @@ html, body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   text-align: center;
   overflow: overlay;
   font-family: 'DM Sans';
   font-size: 1.6rem;
+  background-color: var(--primary-brand-green-light-02);
+}
+
+section {
+  padding-block: 10rem;
 }
 
 a {
@@ -37,7 +47,7 @@ ul {
   list-style: none;
 }
 
-/*=== Declaring variables ===*/
+/*=== declaring variables ===*/
 
 :root {
 
@@ -83,12 +93,11 @@ ul {
 
 nav {
   display: flex;
-  background: var(--primary-brand-green-light);
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   height: var(--nav-height);
+  z-index: 100;
+  width: 100%;
 }
 
 .wrapper {
@@ -107,7 +116,6 @@ nav .wrapper {
 
 nav.scroll {
   background: var(--primary-brand-green);
-  width: 100%;
   position: fixed;
   top: 0;
 }
@@ -127,21 +135,19 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-/* body.menu-expanded > :not(nav) {
-  display: none;
-} */
-
 .menu,
 .close-menu,
 body.menu-expanded .open-menu {
-  opacity: 0;
   visibility: hidden;
 }
 
 body.menu-expanded .menu,
 body.menu-expanded .close-menu {
-  opacity: 1;
   visibility: visible;
+}
+
+.menu {
+  transform: translateY(100%);
 }
 
 body.menu-expanded .menu {
@@ -152,11 +158,10 @@ body.menu-expanded .menu {
   width: 100vw;
   height: 100vh;
   padding-top: var(--nav-height);
+  transition: transform 250ms;
+  transform: translateY(0);
 }
 
-body.menu-expanded nav {
-  position: relative;
-}
 
 .menu ul:nth-child(1) {
   color: var(--secondary-white);
@@ -189,7 +194,7 @@ body.menu-expanded nav {
 body.menu-expanded .logo,
 body.menu-expanded .close-menu {
   position: relative;
-  z-index: 100;
+  z-index: 1000;
 }
 
 
@@ -201,11 +206,7 @@ body.menu-expanded .menu button path {
   stroke: var(--secondary-white);
 }
 
-
-
-
-/*=== header ===*/
-
+/*=== #home ===*/
 
 header {
   background: var(--primary-brand-green-light);
@@ -258,6 +259,7 @@ header button,
   margin: 0 auto 0;
 }
 
+/*=== #numbers popup ===*/
 
 .numbers {
   display: flex;
@@ -274,11 +276,9 @@ header button,
   border: 0.1rem solid var(--primary-brand-green-light);
   border-radius: 0.6rem;
   display: block;
-  position: relative;
-  top: 0;
-  z-index: 0;
+  /* position: relative;
+  top: 0; */
 }
-
 
 .numbers-text {
   font: var(--font-numbers-text);
@@ -292,16 +292,17 @@ header button,
   margin-bottom: 0.4rem;
 }
 
+/*=== #services  ===*/
+
 .services {
-  background: var(--primary-brand-green-light-02);
   font: var(--font-services-title);
-  height: 206.5rem;
   padding-top: 31.8rem;
+  padding-bottom: 7.6rem;
 }
 
-.services.title {
-  margin-top: 1.6rem;
-  padding: 10rem;
+.services-title {
+  margin: 1.6rem auto 6rem;
+  padding: 0 2.7rem;
   font: var(--font-services-title);
 }
 
@@ -315,23 +316,28 @@ header button,
 
 .card {
   background: var(--secondary-white);
-  width: 32.7rem;
-  height: 20.7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding: 2.4rem;
-  margin-inline: auto;
+  margin: 3.2rem auto;
+  text-align: left;
+  gap: 1.6rem;
+  border: 0.1rem solid var(--primary-brand-green-light);
+border-radius: 6px;
 }
+
+/*=== #about ===*/
 
 .about {
   background: var(--primary-brand-beige);
+  text-align: left;
 }
 
-.about h1 {
+.about h2 {
   font: var(--font-about-title);
   color: var(--secondary-gray-headline);
+  margin: 1.6rem auto 2.4rem;
 }
 
 .about p {
@@ -339,6 +345,13 @@ header button,
   color: var(--secondary-gray-paragraph);
 }
 
+.about img {
+  margin-top: 6rem;
+  margin-bottom: 7.6rem;
+}
+
+
+/*=== #about ===*/
 
 .contact {
   background: var(--secondary-white);
