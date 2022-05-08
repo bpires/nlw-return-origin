@@ -1,11 +1,24 @@
-/* base model: https://www.figma.com/file/HhBnIxVOs2s79A61Wkf4a8/NLW8-%C2%B7-DoctorCare?node-id=0%3A1 */
+/*=== base model: https://www.figma.com/file/HhBnIxVOs2s79A61Wkf4a8/NLW8-%C2%B7-DoctorCare?node-id=0%3A1 ===*/
 
 
-/* Reseting browser configs */
+/*=== Reseting general configs ===*/
 
 * {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  overflow: overlay;
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
 }
 
 a {
@@ -13,15 +26,27 @@ a {
   color: inherit;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 
+ul {
+  list-style: none;
+}
 
-/* Declaring variables */
+/*=== Declaring variables ===*/
 
 :root {
+
   /* setting 1rem == 10px */
   font-size: 62.5%;
+
   /* fonts */
+  --font-menu: 700 2.4rem/3.1rem 'DM Sans', sans-serif;
+  --font-button-menu: 700 1.8rem/2.3rem 'DM Sans', sans-serif;
   --font-title: 700 3.4rem/4.4rem 'DM Sans', sans-serif;
   --font-subtitle: 400 1.8rem/2.7rem 'DM Sans', sans-serif;
   --font-numbers-title: 700 4.8rem/6.2rem 'DM Sans', sans-serif;
@@ -38,6 +63,7 @@ a {
   --font-footer-subtitle: 400 1.6rem/2.1rem 'DM Sans', sans-serif;
  
   /* color palette */
+
   /* primary colors */
   --primary-brand-green: hsla(170, 100%, 26%);
   --primary-brand-green-light: hsl(148, 23%, 89%);  
@@ -53,31 +79,132 @@ a {
   --nav-height: 7.2rem;
 }
 
-body {
-  text-align: center;
-}
-
-.wrapper {
-  width: 37.5rem;
-  margin-inline: auto;
-}
-
+/*=== navigation menu ===*/
 
 nav {
-  background-color: var(--primary-brand-green-light);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.6rem 2.4rem;
+  background: var(--primary-brand-green-light);
   position: fixed;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   height: var(--nav-height);
 }
 
-nav.scroll {
-  
+.wrapper {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
 }
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*=== onScroll() ==*/
+
+nav.scroll {
+  background: var(--primary-brand-green);
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav.scroll .logo svg path {
+  fill: var(--secondary-white);
+}
+
+nav.scroll .open-menu svg path {
+  stroke: var(--secondary-white);
+}
+
+
+/*=== menu expanded ===*/
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+/* body.menu-expanded > :not(nav) {
+  display: none;
+} */
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--primary-brand-green);
+  width: 100vw;
+  height: 100vh;
+  padding-top: var(--nav-height);
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
+.menu ul:nth-child(1) {
+  color: var(--secondary-white);
+  font: var(--font-menu);
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 6rem;
+}
+
+.menu button {
+  background-color: var(--secondary-white);
+  border-radius: 4rem;
+  font: var(--font-button-menu);
+  color: var(--primary-brand-green);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin: 4.8rem auto 8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  width:fit-content;
+  margin-inline: auto;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded .close-menu {
+  position: relative;
+  z-index: 100;
+}
+
+
+body.menu-expanded .logo svg path {
+  fill: var(--secondary-white);
+}
+
+body.menu-expanded .menu button path {
+  stroke: var(--secondary-white);
+}
+
+
+
+
+/*=== header ===*/
 
 
 header {
@@ -113,7 +240,8 @@ header img {
   object-position: 0 1.7rem;
 }
 
-button {
+header button,
+.contact button {
   background: var(--primary-brand-green);
   border: none;
   border-radius: 4rem;
@@ -148,7 +276,7 @@ button {
   display: block;
   position: relative;
   top: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 
