@@ -22,12 +22,12 @@
 
 <br>
 <div><img align="right" src="./assets/github/origin-logo.svg">
-
 <p align="left">
-    The project proposal comprises a responsive and customizable landing page originally designed <br>for DoctorCare, a fictional medical consultation platform.
+    The project proposal comprises a responsive and customizable landing page originally designed for DoctorCare, a fictional medical consultation platform.
 </p>
 <p align="left">Development was guided and conducted by<a href="https://maykbrito.dev/"> Mayk Brito</a>, educator @Rocketseat.</p>
-    <br>
+<p  align="left">You can access his original project by clicking here: <a href=".">live demo</a> | <a href="https://github.com/bpires/nlw-return-origin/tree/main/assets/Model-code(MaykBrito)">repo</a>
+</p>
     <br>
 
 </div>
