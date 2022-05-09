@@ -276,8 +276,6 @@ header button,
   border: 0.1rem solid var(--primary-brand-green-light);
   border-radius: 0.6rem;
   display: block;
-  /* position: relative;
-  top: 0; */
 }
 
 .numbers-text {
@@ -296,8 +294,11 @@ header button,
 
 .services {
   font: var(--font-services-title);
-  padding-top: 31.8rem;
   padding-bottom: 7.6rem;
+}
+
+.space {
+  padding-top: 21.8rem;
 }
 
 .services-title {

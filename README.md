@@ -79,15 +79,19 @@
 
 >One page concept
 >
->Smooth scrolling & ScrollReveal
+>Smooth scrolling & Menu transitions
 >
->Menu transitions
+>Using third-party libraries (ScrollReveal)
 >
 >Clean code strategies
 
 ##### 🚀 Stage 4
 
 ##### 🌌 Stage 5
+
+
+
+#NextLevel #NeverStopLearning #NewSkills #StepByStep
 
 ---
 
