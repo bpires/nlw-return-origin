@@ -87,11 +87,18 @@
 
 ##### 🚀 Stage 4
 
+>Function loading adjusts
+>
+>Page color change
+>
+>Back to top button
+
+
+
 ##### 🌌 Stage 5
 
 
-
-#NextLevel #NeverStopLearning #NewSkills #StepByStep
+<h6 align="center">#NextLevel #NeverStopLearning #NewSkills #StepByStep</h6>
 
 ---
 
@@ -116,10 +123,9 @@ Made with 💜 Powered by ☕<p>
 
 --- 
 
-<p align="center"><i>
-I'm am an open source enthusiast. 
-<br/>Feel free to get inspiration from any aspect of this project! 
+<p align="center"><i> I'm am an open source enthusiast.</i> 🌱
+<br/><i>Feel free to get inspiration from any aspect of this project! 
 <br/>Even so, be reasonable: do not just copy.
-<br/>Like academic writing, your work can incorporate the ideas of others,
-<br>but should reflect your original approach to the problem.
-    <i></p>
+<br/>Like academic writing, your work can incorporate the ideas of others 
+<br>but should reflect your original approach to the problem.</i>
+</p>

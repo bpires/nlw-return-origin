@@ -18,6 +18,9 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+}
 
 body {
   text-align: center;
@@ -172,7 +175,7 @@ body.menu-expanded .menu {
   margin-top: 6rem;
 }
 
-.menu button {
+.menu .button {
   background-color: var(--secondary-white);
   border-radius: 4rem;
   font: var(--font-button-menu);
@@ -181,6 +184,13 @@ body.menu-expanded .menu {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   margin: 4.8rem auto 8rem;
+}
+
+.menu .button:hover {
+  background-color: var(--primary-brand-green);
+  color: var(--secondary-white);
+  filter: brightness(1.1);
+
 }
 
 .social-links {
@@ -238,17 +248,16 @@ header img {
   display: block;
   width: 26.4rem;
   margin-inline: auto;
-  object-position: 0 1.7rem;
+
 }
 
-header button,
-.contact button {
+.button {
   background: var(--primary-brand-green);
   border: none;
   border-radius: 4rem;
   margin-bottom: 6rem;
-  height: 6.2rem;
-  width: 26.3rem;
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
   font: var(--font-button);
   color: var(--secondary-white);
   text-transform: uppercase;
@@ -258,6 +267,32 @@ header button,
   justify-content: center;
   margin: 0 auto 0;
 }
+
+.button:hover {
+  background-color: var(--primary-brand-green-hover);
+  transition: background 400ms;
+}
+
+
+
+.hero-image {
+  position: relative;
+}
+
+.hero-light {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0 31.5px 0;
+}
+
+.hero-light object {
+  width: 26.4rem;
+  mix-blend-mode: hue;
+  filter: blur(18px);
+}
+
+
 
 /*=== #numbers popup ===*/
 
@@ -356,18 +391,69 @@ border-radius: 6px;
 
 .contact {
   background: var(--secondary-white);
+  text-align: left;
 }
 
 .contact h2 {
   color: var(--secondary-gray-headline);
   font: var(--font-title);
+  margin-bottom: 3.2rem;
 }
 
-.contact p {
+.contact ul {
   font: var(--font-contact-subtitle);
+  color: var(--secondary-gray-paragraph);
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
 }
 
-footer {
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+}
+
+.contact button {
+  margin: 3.2rem auto 6rem;
+}
+
+footer {  
   background: var(--primary-brand-green);
   color: var(--secondary-white);
+  text-align: left;
+  margin-left: 2.6rem;
+  padding: 6rem 0;
+}
+
+footer div {
+  margin-block: 2.4rem 3.2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  color: var(--primary-brand-beige);
+}
+
+footer .social-links {
+  margin: 0; 
+}
+
+/* === Back to top === */
+
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
