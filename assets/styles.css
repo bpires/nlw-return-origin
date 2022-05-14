@@ -248,7 +248,6 @@ header img {
   display: block;
   width: 26.4rem;
   margin-inline: auto;
-
 }
 
 .button {
@@ -282,14 +281,12 @@ header img {
 .hero-light {
   position: absolute;
   top: 0;
-  z-index: 1;
   margin: 0 31.5px 0;
 }
 
-.hero-light object {
-  width: 26.4rem;
-  mix-blend-mode: hue;
-  filter: blur(18px);
+.hero-light svg {
+  mix-blend-mode: hue; 
+  filter: blur(18px); 
 }
 
 
