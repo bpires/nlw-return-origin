@@ -87,18 +87,18 @@
 
 ##### 🚀 Stage 4
 
->Function loading adjusts
->
->Page color change
+>Function loading adjustments
 >
 >Back to top button
+>
+>Creating customisable color schemes
 
 
 
 ##### 🌌 Stage 5
 
 
-<h6 align="center">#NextLevel #NeverStopLearning #NewSkills #StepByStep</h6>
+<h6 align="center">#NextLevel #NeverStopLearning #NewSkills #StepByStep #MissionAccomplished</h6>
 
 ---
 
